@@ -1,0 +1,29 @@
+#
+# Copyright (C) 1993 Theodore Ts'o.  This file may be redistributed
+# under the terms of the GNU Public License.
+#
+command_table debug_cmds;
+
+request do_show_debugfs_params, "Show debugfs parameters",
+	show_debugfs_params, params;
+
+request do_open_filesys, "Open a filesystem",
+	open_filesys, open;
+
+request do_close_filesys, "Close the filesystem",
+	close_filesys, close;
+
+request do_analyze_meta_data, "Analyze all meta data",
+	analyze_meta_data, features;
+
+request do_extract_meta_data, "Extract all meta data",
+	extract_meta_data, features;
+
+request do_show_super_stats, "Show superblock statistics",
+	show_super_stats, stats;
+
+request do_stat, "Show inode information ",
+	show_inode_info, stat;
+
+end;
+
